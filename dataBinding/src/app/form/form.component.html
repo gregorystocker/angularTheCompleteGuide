@@ -1,0 +1,17 @@
+<h1>data binding mini assignment</h1>
+<input [(ngModel)]="username" />
+<br />
+<button
+  class="btn btn-primary"
+  (click)="clearUsername()"
+  [disabled]="isEmpty()"
+>
+  clear username
+</button>
+<p>username is: {{ username }}</p>
+
+<h3>description</h3>
+<p>
+  Uses string interpolation to show username in the p tag, uses event-binding to
+  clear the username and two way binding to update the username from the input.
+</p>

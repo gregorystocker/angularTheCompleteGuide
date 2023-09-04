@@ -1,0 +1,25 @@
+<div class="outer-container">
+  <app-game-component
+    (createOddEvent)="onCreateOddEvent($event)"
+    (createEvenEvent)="onCreateEvenEvent($event)"
+  ></app-game-component>
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <h1>EVENS</h1>
+
+        <app-even
+          *ngFor="let num of evenComponentsArray"
+          [value]="num"
+        ></app-even>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <h1>ODDS</h1>
+
+        <app-odd *ngFor="let num of oddComponentsArray" [value]="num"></app-odd>
+      </div>
+    </div>
+  </div>
+</div>

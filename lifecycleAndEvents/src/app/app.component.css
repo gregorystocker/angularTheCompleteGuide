@@ -1,0 +1,8 @@
+.outer-container {
+  margin: 5rem;
+  border-style: solid;
+  border-color:rgb(240, 236, 231);
+  border-radius: 20px;
+  border-width: 1rem;
+  padding: 1rem;
+}

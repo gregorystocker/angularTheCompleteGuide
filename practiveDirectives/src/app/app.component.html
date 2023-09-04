@@ -1,0 +1,15 @@
+<div class="container">
+  <button class="btn btn-primary" (click)="onDisplayClick()">
+    Display Details
+  </button>
+  <p *ngIf="isHidden">secret password is: pa$$Word</p>
+  <ul>
+    <li
+      *ngFor="let obj of buttonClicksArray"
+      [ngStyle]="{ backgroundColor: obj.backgroundColor }"
+      [ngClass]="{ whiteColorClass: obj.index >= 4 }"
+    >
+      {{ obj.date }}
+    </li>
+  </ul>
+</div>
